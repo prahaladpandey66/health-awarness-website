@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5faf6;
+    color: #263b30;
+}
+
+/* Navigation */
+header {
+    background-color: #145c40;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #b9f6ca;
+}
+
+/* Hero Section */
+.hero {
+    height: 450px;
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=1400");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background-color: #35a76b;
+    color: white;
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 25px;
+}
+
+.btn:hover {
+    background-color: #237b4b;
+}
+
+/* General Sections */
+section {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+section h2 {
+    color: #145c40;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.intro p,
+.awareness p {
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+    padding-bottom: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #19734b;
+    margin: 18px 0 10px;
+}
+
+.card p {
+    padding: 0 18px;
+    line-height: 1.6;
+}
+
+/* Exercise */
+.exercise {
+    background-color: #e8f5ec;
+}
+
+/* Health Tips */
+.tips-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tip {
+    background-color: white;
+    padding: 25px;
+    width: 240px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.tip h3 {
+    color: #16834d;
+    margin-bottom: 12px;
+}
+
+.tip p {
+    line-height: 1.6;
+}
+
+/* Awareness */
+.awareness {
+    background-color: #dff3e5;
+}
+
+/* Gallery */
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-images img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Contact */
+#contact {
+    background-color: #e8f5ec;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 14px;
+    border: 1px solid #b5cdbd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+button {
+    background-color: #145c40;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #237b4b;
+}
+
+/* Footer */
+footer {
+    background-color: #103d2d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 2;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .gallery-images img {
+        width: 100%;
+    }
+}
